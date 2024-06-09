@@ -1,79 +1,419 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
-    <title>Image Processing App</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-
-        .container {
-            max-width: 600px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        h1 {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        .error {
-            color: red;
-            margin-bottom: 10px;
-        }
-
-        .form-group {
-            margin-bottom: 20px;
-        }
-
-        .form-group label {
-            display: block;
-            margin-bottom: 5px;
-        }
-
-        .form-group input[type="file"] {
-            display: none;
-        }
-
-        .form-group .btn {
-            display: inline-block;
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-    </style>
+<meta charset="utf-8">
+<title>首页</title>
+	<link rel="stylesheet" href="css/index2.css">
+	<link rel="stylesheet" href="css/normal-header.css">
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/footer.css">
+	
 </head>
+
 <body>
-<div class="container">
-    <h1>Image Processing App</h1>
+	<div class="header">
+        <div class="all">
+            <div class="left">
+                <img src="img/banhui.png" alt="">
+				<p><br><br><span style="font-size: 20px;font-weight: bolder;">教育技术学2301班</span></p>
+            </div>
 
-    {% if error %}
-    <p class="error">{{ error }}</p>
-    {% endif %}
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="news.html">班级新闻</a></li>
+                    <li><a href="notice.html">重要通知</a></li>
+                    <li><a href="liuyan.html">留言板</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+	
+	<div class="run">
+		<marquee behavior="scroll" direction="left">
+			温馨提示：请保持全屏浏览，制作完后经过检查没有问题，如遇网页错乱或其他情况，请尝试用不同浏览器打开。
+		</marquee>
+	</div>
+	<div class="picture">
+		<div class="box">
+			<div class="imgList">
+				<a href="#" class="showImg">
+					<img src="img/hezhao2.jpg" alt="">
+				</a>
+				<a href="#">
+					<img src="img/hezhao.jpg" alt="">
+				</a>
+				<a href="#">
+					<img src="img/hezhao3.jpg" alt="">
+				</a>
+			</div>
+			<span class="leftBtn">&lt;</span>
+			<span class="rightBtn">&gt;</span>
+			<div class="btn">
+				<span class="checked"></span>
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+	</div>
 
-    <form method="POST" enctype="multipart/form-data">
-        <div class="form-group">
-            <label for="image">Select an image:</label>
-            <input type="file" id="image" name="image" accept="image/*" required>
-            <label for="image" class="btn">Browse</label>
+
+	<div class="k1">
+		<div class="k1d1">
+			<div class="k2d1o1">
+				<div class="k2d1s1">
+					<h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;风采展示</h3>
+					<h5 style="font-size: 10px;">&nbsp;&nbsp;&nbsp;&nbsp;TALENT SHOWCASE</h5>
+				</div>
+			</div>
+			<div class="k2d1o2">
+				<marquee behavior="scroll" direction="up" height="100%" width="270px" onMouseOver=this.stop() onMouseOut=this.start()>
+					<a href="img/1.jpg" target="_blank"><img src="img/1.jpg" alt="错误"/></a>
+					<a href="img/2.jpg" target="_blank"><img src="img/2.jpg" alt="错误"/></a>
+					<a href="img/3.jpg" target="_blank"><img src="img/3.jpg" alt="错误"/></a>
+					<a href="img/4.jpg" target="_blank"><img src="img/4.jpg" alt="错误"/></a>
+					<a href="img/5.jpg" target="_blank"><img src="img/5.jpg" alt="错误"/></a>
+					<a href="img/6.jpg" target="_blank"><img src="img/6.jpg" alt="错误"/></a>
+					<a href="img/7.jpg" target="_blank"><img src="img/7.jpg" alt="错误"/></a>
+					<a href="img/8.jpg" target="_blank"><img src="img/8.jpg" alt="错误"/></a>
+					<a href="img/9.jpg" target="_blank"><img src="img/9.jpg" alt="错误"/></a>
+					<a href="img/10.jpg" target="_blank"><img src="img/10.jpg" alt="错误"/></a>
+				</marquee>
+			</div>
+		</div>
+		<div class="k1d2">
+			<div class="k1d2o1">
+				<a href="news.html">
+				<div class="k1d2s1">
+					<h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;班级新闻</h3>
+					<h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CLASS NEWS</h5>
+				</div>
+				</a>
+				<div class="k1d2s2">
+					<a href="news.html"><h5>更多>></h5></a>
+				</div>
+			</div>
+			<div class="k1d2o2">
+				<a href="story-componnet/dushuhui.html">
+				<div class="k1d2o2s1">
+					<div class="v1"><img src="img/jt.png" alt="wrong"></div>
+					<div class="v2"><b>班会</b>：召开读书会暨安全班会</div>
+					<div style="float: left;margin-left: 212px;	font-size: 15px;margin-top: 15px">2024/5/26</div>
+				</div>
+				</a>
+				<a href="story-componnet/xinli.html">
+				<div class="k1d2o2s1">
+					<div class="v1"><img src="img/jt.png" alt="wrong"></div>
+					<div class="v2"><b>班会</b>：召开心理班会</div>
+					<div class="v3">2024/5/17</div>
+				</div>
+				</a>
+				<a href="story-componnet/maoshu.html">
+				<div class="k1d2o2s1">
+					<div class="v1"><img src="img/jt.png" alt="wrong"></div>
+					<div class="v2"><b>游戏</b>：猫鼠游戏</div>
+					<div class="v3">2024/3/13</div>
+				</div>
+				</a>
+				<a href="story-componnet/anquan.html">
+				<div class="k1d2o2s1">
+					<div class="v1"><img src="img/jt.png" alt="wrong"></div>
+					<div class="v2"><b>班会</b>：召开安全主题班会</div>
+					<div class="v3">2024/3/2</div>
+				</div>
+				</a>
+			</div>
+			
+		</div>
+		<div class="k1d3">
+			<div class="k1d3o1">
+				<div class="k1d3s1">
+					<h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;专业介绍</h3>
+					<h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;INTRODUCE</h5>
+				</div>
+			</div>
+			<div class="k1d3o2">
+				<img src="img/jyjs.jpg">
+				<p style="font-size: 18px;line-height: 30px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>教育技术学</b>是现代教育学发展的重要成果，教育技术参与教育过程，是对教育<b>过程模式</b>的优化提升，使得教育过程的组织序列更具逻辑，系统优化了分析和处理教育、教学问题的思路。</p>
+				<p style="font-size: 18px;line-height: 30px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;教育技术作为优化教育活动的一个重要方面可谓源远流长，这种说法则是以<b>教学媒体</b>的运用为前提。人们真正使用教育技术这个术语，并围绕它形成一个独立的<b>知识体系</b>，则是19世纪60年代以后的事情，当然它有一个<b>孕育期</b>和<b>生长期</b>，那至多也是近一个世纪的事情。<b>现代科学技术</b>和<b>现代教育理念</b>的不断发展，赋予了教育技术概念充实的内涵和无限的生命力。教育技术是关于<b>学习资源</b>和<b>学习过程</b>的设计、开发、使用、管理和评价的理论和实践，其最终的价值追求是优化教育教学。教育以人为本，以传授为主。</p>
+			</div>
+		</div>
+	</div>
+	
+	<div class="k1">
+		<div class="k2d2">
+			<div class="k2d2o1">
+				<a href="notice.html">
+				<div class="k2d2s1">
+					<h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;重要通知</h3>
+					<h5 style="font-size: 10px;">&nbsp;&nbsp;&nbsp;&nbsp;IMPORTANT NOTICE</h5>
+				</div>
+				</a>
+				<div class="k2d1s2">
+					<a href="notice.html"><h5>更多>></h5></a>
+				</div>
+			</div>
+			<div class="k2d2o2">
+				<a href="notice.html">
+				<div class="k2d2o2s1">
+					<div class="v1"><img src="img/jt.png" alt="wrong"></div>
+					<div class="v2">2024-25学年第一学期选课</div>
+					<div style="float: left;margin-left: 250px;	font-size: 15px;margin-top: 15px">★★★★★</div>
+				</div>
+				</a>
+				<a href="notice.html">
+				<div class="k2d2o2s1">
+					<div class="v1"><img src="img/jt.png" alt="wrong"></div>
+					<div class="v2">四六级考试</div>
+					<div class="v3">★★★</div>
+				</div>
+				</a>
+				<a href="notice.html">
+				<div class="k2d2o2s1">
+					<div class="v1"><img src="img/jt.png" alt="wrong"></div>
+					<div class="v2">课程调课通知</div>
+					<div class="v3">★★★★</div>
+				</div>
+				</a>
+				<a href="notice.html">
+				<div class="k2d2o2s1">
+					<div class="v1"><img src="img/jt.png" alt="wrong"></div>
+					<div class="v2">年级建设相关讲座</div>
+					<div class="v3" style="text-decoration: line-through">✰✰✰✰</div>
+				</div>
+				</a>
+			</div>
+		</div>
+		<div class="k2d3">
+		
+		</div>
+	</div>
+	
+ <div class="main">
+
+        <!-- 第一内容 -->
+        <div class="introduce">
+            <div class="about">
+                关于我们
+            </div>
+            <div class="honor">
+                教育技术学2301班
+            </div>
+            <div class="infor">
+                <p>这是一个共有<b>41</b>名同学组成的班级。<br> 以“<b>教育媒体设计与开发能力</b>、<b>教学设计与信息技术课堂教学能力</b>、<b>教育研究能力</b>”三大专业核心能力为中心</p>
+                <p>班级同学全面发展，素有<b>“教技最强”</b>的美誉。<br>
+                    在教育资源设计、开发与应用、教学过程设计与实施、学校信息化环境建设与管理、教育研究等方面<b>全面学习</b><br> 向着<b>更高目标，更高成就，更高能力</b>不断前进。
+                </p>
+            </div>
+        </div>
+        <!-- 第二部分 -->
+	 	<div class="introduce2">
+	 	<div class="about2">
+                快速浏览
+        </div>
+	 	</div>
+        <div class="story">
+            <h3 class="topic">班级新闻 CLASS NEWS</h3>
+            <ul>
+                <li>
+                    <a href="news.html">
+                        <img src="img/xinwen/1.jpg" alt="">
+                        <div class="mask">
+                            <h4>读书会暨安全班会</h4>
+                            <h5>通过集体讨论书籍，激发对阅读的兴趣。</h5>
+							<p>通过集体讨论书籍，可以激发学生对阅读的兴趣，让学生发现阅读的乐趣，并鼓励他们探索不同类型的文学作品。</p>
+							<p>在读书会中，学生需要分享自己对书本内容的理解和感受，这个过程促进了深度阅读，帮助学生提高理解和分析复杂文本的能力。</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="news.html">
+                        <img src="img/xinwen/2.jpg" alt="">
+                        <div class="mask">
+                            <h4>心理班会</h4>
+                            <h5>悦纳自我，绽放快乐</h5>
+                            <p>有一种成熟叫接纳自己，在悠长的时光里，能陪伴我们最久的是自己。一个人有两个我，一个在黑暗中醒着，一个在光明中睡着。我们传统价值中，就是要挣第一，所以在平常中，我们常常因为和别人比较而感到自卑。但世界正因每个人有差别而丰富多彩，所以我们要学会悦纳自己，欣赏自己，做自己的诗，容许错别字，爱我的不通顺，残缺，和差池。</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="news.html">
+                        <img src="img/xinwen/4.jpg" alt="">
+                        <div class="mask">
+                            <h4>猫鼠游戏</h4>
+                            <h5>“猫和老鼠”的躲猫猫游戏!</h5>
+                            <p>近日，我们班级开展了一场热闹非凡的线下活动--"猫和老鼠"的躲猫猫游戏!在这个快节奏、高互动的游戏中，同学们尽情释放青春活力，享受了一次意想不到的快乐时光。</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="news.html">
+                        <img src="img/xinwen/5.jpg" alt="">
+                        <div class="mask">
+                            <h4>安全主题班会</h4>
+                            <h5>大家在返校生活中，千万不要忘了安全</h5>
+                            <p>开学第一课，意义非凡，不仅标志着新的学习周期的开始，也为我们提供了重新定位自己，设定新目标的机会</p>
+                            <p>为了使全体学生提高对安全的重视度，以便更适应新学期新生活，2024年2月29日，教技231组织开展安全教育主题班会</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+			
         </div>
 
-        <div class="form-group">
-            <label for="operation">Select an operation:</label>
-            <select id="operation" name="operation">
-                <option value="noise">Add Noise</option>
-                <option value="grayscale">Grayscale</option>
-                <option value="blur">Blur</option>
-            </select>
+        <!-- 第三部分 -->
+        <div class="specialty">
+            <h3 class="topic">
+                重要通知 IMPORTANT NOTICE
+            </h3>
+            <ul class="etc">
+                <li>
+                    <a href="./notice.html">
+                        <div class="spe-bc">
+                            <img src="img/tongzhi/1.jpg" alt="">
+                        </div>
+                        <div>
+                            <h3>2024-25学年第一学期选课</h3>
+                            <p>
+                            <b>时间：</b>5月29日(选课)<br>
+                            <b>地点：</b>选课网站
+                            <br>
+                            <b>重要程度：</b>★★★★★
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="./notice.html">
+                        <div class="spe-bc">
+                            <img src="img/tongzhi/2.png" alt="">
+                        </div>
+                        <div>
+                            <h3>四六级考试</h3>
+                            <p><b>考试时间：</b>6月15日<br>
+                            <b>地点：</b>另行通知
+                            <br>
+                            <b>重要程度：</b>★★★</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="./notice.html">
+                        <div class="spe-bc">
+                            <img src="img/tongzhi/3.jpg" alt="">
+                        </div>
+                        <div>
+                            <h3>课程调课通知</h3>
+                            <p><b>时间：</b>详见通知
+                            <br>
+                            <b>地点：</b>详见通知
+							<br>
+                            <b>重要程度：</b>★★★★</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="./notice.html">
+                        <div class="spe-bc">
+                            <img src="img/tongzhi/4.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <h3>年级建设相关讲座</h3>
+                            <p><b>时间：</b>5月31号&nbsp;&nbsp;18：00-18：40
+                            <br>
+                            <b>地点：</b>17-112
+                            <br>
+                            <b>重要程度：</b><span style="text-decoration: line-through">✰✰✰✰</span>（课程冲突,不参加）</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+			 <ul class="etc" style="margin-top: 70px;">
+                <li>
+                    <a href="./notice.html">
+                        <div class="spe-bc">
+                            <img src="img/tongzhi/5.jpg" alt="">
+                        </div>
+                        <div>
+                            <h3>浙师大校园第九次献血活动</h3>
+                            <p>
+                            <b>时间：</b>5月25日&nbsp;&nbsp;&nbsp;&nbsp;9:30-15:30
+                            <br>
+                            <b>地点：</b>杏园餐厅门口
+                            <br>
+                            <b>重要程度：</b>★
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="./notice.html">
+                        <div class="spe-bc">
+                            <img src="img/tongzhi/6.jpg" alt="">
+                        </div>
+                        <div>
+                            <h3>团员证补办工作</h3>
+                            <p><b>时间：</b>5月26日
+                            <br>
+                            <b>地点：</b>团支书处
+                            <br>
+                            <b>重要程度：</b>★</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="./notice.html">
+                        <div class="spe-bc">
+                            <img src="img/tongzhi/7.jpg" alt="">
+                        </div>
+                        <div>
+                            <h3>web期末作业</h3>
+                            <p><b>时间：</b>6月7日
+                            <br>
+                            <b>地点：</b>学习通
+                            <br>
+                            <b>重要程度：</b>★★★★★</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="./notice.html">
+                        <div class="spe-bc">
+                            <img src="img/tongzhi/8.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <h3>军训</h3>
+                            <p><b>时间：</b>7月1日
+                            <br>
+                            <b>地点：</b>学校内
+                            <br>
+                            <b>重要程度：</b>★★★★</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
         </div>
 
-        <div class="form-group">
-            <input type="submit" value="Process">
+        <!-- 第四部分 -->
+        <div class="scenery" style="margin-top: 400px;">
+            <h3 class="topic">留言板 MESSAGE BOARD</h3>
         </div>
-    </form>
-</div>
+
+
+    </div>
+  
+    <!-- 尾部版权 -->
+    <div class="footer">
+        <div class="infor">
+            <p>Copyright © 2024 TONG 版权所有</p>
+            <p>邮箱：123456789@qq.com</p>
+			<p>网站为web课程期末作业，请勿商用，侵权必究</p>
+        </div>
+    </div>
+	
+
+<script src="js/index.js"></script>
+<script src="js/jquery.min.js"></script>
+	
 </body>
 </html>
